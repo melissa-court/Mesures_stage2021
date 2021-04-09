@@ -1,0 +1,5 @@
+# Mesure Biovolumes
+## Camapgne Mars 2021
+### Comparaison Longueur Navicula
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+'LongNavi <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 1, header=TRUE, colClasses=NA)'
