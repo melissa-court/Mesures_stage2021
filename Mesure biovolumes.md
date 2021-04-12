@@ -176,7 +176,7 @@ Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.d
 > res.kruskal
 
 Résultat : p = 0.000124
-![Resultats Kruskal ProfCreno](https://zupimages.net/up/21/15/dik2.png)
+![Resultats Kruskal ProfCreno](https://zupimages.net/up/21/15/dcph.png)
 
 -> Il y a donc une différence significative de profondeur entre des sources
 
