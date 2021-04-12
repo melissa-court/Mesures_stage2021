@@ -87,3 +87,162 @@ Ours - Bard : p = 0.274
 Estreys - Bard : p = 0.0000279
 
 -> Il y a donc une différence significative entre Estreys et les deux autres sources. Les diatomées Navicula de la source des Estreys sont moins profondes que dans les autres sources en termes de profondeur. 
+
+### Crenotia
+#### Comparaison Longueur 
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+
+> LongCreno <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 4, header=TRUE, colClasses=NA)
+> ggboxplot(LongCreno, x = "Source", y = "Longueur")
+> LongCreno <- LongCreno %>%
++ reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
+> LongCreno %>%
++ group_by(Source) %>%
++ get_summary_stats(Longueur, type = "common")
+> res.kruskal <- LongCreno %>% kruskal_test(Longueur~Source)
+> res.kruskal
+
+Résultat : p = 0.00266
+-> Il y a donc une différence significative de longueur entre des sources
+
+Utilisation d'un test de Wilcoxon pour voir quelles sources sont différentes 
+
+> pwc <- LongCreno %>%
++ wilcox_test(Longueur~Source, p.adjust.method = "bonferroni")
+> pwc
+
+Résultats :
+Ours - Estreys : p = 0.002
+Ours - Bard : p = 0.02
+Estreys - Bard : p = 0.072
+
+-> Il y a donc une différence significative (_ça dépend si on met la limite à 0,05 ou 0,01_) entre Ours et les deux autres sources. Les diatomées Crenotia de la source Ours sont plus petites que dans les autres sources en termes de longueur. 
+
+#### Comparaison Largeur
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+
+> LargCreno <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 5, header=TRUE, colClasses=NA)
+> ggboxplot(LargCreno, x = "Source", y = "Largeur")
+> LargCreno <- LargCreno %>%
++ reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
+> LargCreno %>%
++ group_by(Source) %>%
++ get_summary_stats(Largeur, type = "common")
+> res.kruskal <- LargCreno %>% kruskal_test(Largeur~Source)
+> res.kruskal
+
+Résultat : p = 0.00000148
+-> Il y a donc une différence significative de largeur entre des sources
+
+Utilisation d'un test de Wilcoxon pour voir quelles sources sont différentes 
+
+> pwc <- LargCreno %>%
++ wilcox_test(Largeur~Source, p.adjust.method = "bonferroni")
+> pwc
+
+Résultats :
+Ours - Estreys : p = 0.000143
+Ours - Bard : p = 0.752 
+Estreys - Bard : p = 0.000000353
+
+-> Il y a donc une différence significative entre les Estreys et les deux autres sources. Les Estreys présentent la plus grande largeur de diatomées. 
+
+#### Comparaison Profondeur
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+
+> ProfCreno <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 6, header=TRUE, colClasses=NA)
+> ggboxplot(ProfCreno, x = "Source", y = "Profondeur")
+> ProfCreno <- ProfCreno %>%
++ reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
+> ProfCreno %>%
++ group_by(Source) %>%
++ get_summary_stats(Profondeur, type = "common")
+> res.kruskal <- ProfCreno %>% kruskal_test(Profondeur~Source)
+> res.kruskal
+
+Résultat : p = 0.000124
+-> Il y a donc une différence significative de profondeur entre des sources
+
+Utilisation d'un test de Wilcoxon pour voir quelles sources sont différentes 
+
+> pwc <- ProfCreno %>%
++ wilcox_test(Profondeur~Source, p.adjust.method = "bonferroni")
+> pwc
+
+Résultats :
+Ours - Estreys : p = 0.318
+Ours - Bard : p = 0.319
+Estreys - Bard : p = 0.958
+
+-> Il n'y a pas de différence significative entre chaque source
+
+### Planothidium
+#### Comparaison Longueur 
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+
+> LongPlano <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 7, header=TRUE, colClasses=NA)
+> ggboxplot(LongPlano, x = "Source", y = "Longueur")
+> LongPlano <- LongPlano %>%
++ reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
+> LongPlano %>%
++ group_by(Source) %>%
++ get_summary_stats(Longueur, type = "common")
+> res.kruskal <- LongPlano %>% kruskal_test(Longueur~Source)
+> res.kruskal
+
+Résultat : p = 0.00000000430
+-> Il y a donc une différence significative de longueur entre des sources
+
+Utilisation d'un test de Wilcoxon pour voir quelles sources sont différentes 
+
+> pwc <- LongPlano %>%
++ wilcox_test(Longueur~Source, p.adjust.method = "bonferroni")
+> pwc
+
+Résultats :
+Estreys - Salins : p  = 0.00000000433
+
+-> Il y a donc une différence significative entre Estreys et Salins. Les diatomées Planothidium de la source des Salins sont plus petites que dans l'autre source en termes de longueur. 
+
+#### Comparaison Largeur
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+
+> LargPlano <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 8, header=TRUE, colClasses=NA)
+> ggboxplot(LargPlano, x = "Source", y = "Largeur")
+> LargPlano <- LargPlano %>%
++ reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
+> LargPlano %>%
++ group_by(Source) %>%
++ get_summary_stats(Largeur, type = "common")
+> res.kruskal <- LargPlano %>% kruskal_test(Largeur~Source)
+> res.kruskal
+
+Résultat : p = 3.18e-14
+-> Il y a donc une différence significative de largeur entre des sources
+
+Utilisation d'un test de Wilcoxon pour voir quelles sources sont différentes 
+
+> pwc <- LargPlano %>%
++ wilcox_test(Largeur~Source, p.adjust.method = "bonferroni")
+> pwc
+
+Résultats :
+Estreys - Salins : p = 3.21e-14
+
+-> Il y a donc une différence significative entre les Estreys et les Salins. Les Estreys présentent les Planothidium les plus larges 
+
+#### Comparaison Profondeur
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+
+> ProfCreno <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 6, header=TRUE, colClasses=NA)
+> ggboxplot(ProfCreno, x = "Source", y = "Profondeur")
+> ProfCreno <- ProfCreno %>%
++ reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
+> ProfCreno %>%
++ group_by(Source) %>%
++ get_summary_stats(Profondeur, type = "common")
+> res.kruskal <- ProfCreno %>% kruskal_test(Profondeur~Source)
+> res.kruskal
+
+Résultat : p = 0.231
+-> Il n'y a pas de différence significative de profondeur des Planothidium entre les sources Salins et Estreys
