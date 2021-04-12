@@ -2,7 +2,7 @@
 ## Campagne Mars 2021
 ### Navicula
 #### Comparaison Longueur 
-Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/))
 
 > LongNavi <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 1, header=TRUE, colClasses=NA)
 > ggboxplot(LongNavi, x = "Source", y = "Longueur")
@@ -34,7 +34,7 @@ Estreys - Bard : p = 0.634
 -> Il y a donc une différence significative entre Ours et les deux autres sources. Les diatomées Navicula de la source Ours sont plus petites que dans les autres sources en termes de longueur. 
 
 #### Comparaison Largeur
-Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/))
 
 > LargNavi <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 2, header=TRUE, colClasses=NA)
 > ggboxplot(LargNavi, x = "Source", y = "Largeur")
@@ -66,7 +66,7 @@ Estreys - Bard : p = 0.00021
 -> Il y a donc des différences significatives entre toutes les sources. La plus petite largeur de Navicula se retrouve dans la source Ours. La largeur moyenne est à Bard et la plus grande est aux Estreys. 
 
 #### Comparaison Profondeur
-Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/))
 
 > ProfNavi <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 3, header=TRUE, colClasses=NA)
 > ggboxplot(ProfNavi, x = "Source", y = "Profondeur")
@@ -99,7 +99,7 @@ Estreys - Bard : p = 0.0000279
 
 ### Crenotia
 #### Comparaison Longueur 
-Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/))
 
 > LongCreno <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 4, header=TRUE, colClasses=NA)
 > ggboxplot(LongCreno, x = "Source", y = "Longueur")
@@ -131,7 +131,7 @@ Estreys - Bard : p = 0.072
 -> Il y a donc une différence significative (_ça dépend si on met la limite à 0,05 ou 0,01_) entre Ours et les deux autres sources. Les diatomées Crenotia de la source Ours sont plus petites que dans les autres sources en termes de longueur. 
 
 #### Comparaison Largeur
-Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/))
 
 > LargCreno <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 5, header=TRUE, colClasses=NA)
 > ggboxplot(LargCreno, x = "Source", y = "Largeur")
@@ -163,7 +163,7 @@ Estreys - Bard : p = 0.000000353
 -> Il y a donc une différence significative entre les Estreys et les deux autres sources. Les Estreys présentent la plus grande largeur de diatomées. 
 
 #### Comparaison Profondeur
-Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/))
 
 > ProfCreno <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 6, header=TRUE, colClasses=NA)
 > ggboxplot(ProfCreno, x = "Source", y = "Profondeur")
@@ -196,7 +196,7 @@ Estreys - Bard : p = 0.958
 
 ### Planothidium
 #### Comparaison Longueur 
-Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/))
 
 > LongPlano <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 7, header=TRUE, colClasses=NA)
 > ggboxplot(LongPlano, x = "Source", y = "Longueur")
@@ -226,7 +226,7 @@ Estreys - Salins : p  = 0.00000000433
 -> Il y a donc une différence significative entre Estreys et Salins. Les diatomées Planothidium de la source des Salins sont plus petites que dans l'autre source en termes de longueur. 
 
 #### Comparaison Largeur
-Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/))
 
 > LargPlano <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 8, header=TRUE, colClasses=NA)
 > ggboxplot(LargPlano, x = "Source", y = "Largeur")
@@ -256,7 +256,7 @@ Estreys - Salins : p = 3.21e-14
 -> Il y a donc une différence significative entre les Estreys et les Salins. Les Estreys présentent les Planothidium les plus larges 
 
 #### Comparaison Profondeur
-Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/)
+Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-kruskal-wallis-dans-r/))
 
 > ProfCreno <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 6, header=TRUE, colClasses=NA)
 > ggboxplot(ProfCreno, x = "Source", y = "Profondeur")
