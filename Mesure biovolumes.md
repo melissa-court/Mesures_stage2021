@@ -178,21 +178,7 @@ Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.d
 Résultat : p = 0.000124
 ![Resultats Kruskal ProfCreno](https://zupimages.net/up/21/15/dcph.png)
 
--> Il y a donc une différence significative de profondeur entre des sources
-
-Utilisation d'un test de Wilcoxon pour voir quelles sources sont différentes 
-
-> pwc <- ProfCreno %>%
-> + wilcox_test(Profondeur~Source, p.adjust.method = "bonferroni")
-> pwc
-
-Résultats :
-Ours - Estreys : p = 0.318
-Ours - Bard : p = 0.319
-Estreys - Bard : p = 0.958
-![Resultats Wilcox ProfCreno](https://zupimages.net/up/21/15/drt4.png)
-
--> Il n'y a pas de différence significative entre chaque source
+-> Il n'y a pas de différence significative entre les sources
 
 ### Planothidium
 #### Comparaison Longueur 
