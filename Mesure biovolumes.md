@@ -6,6 +6,7 @@ Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.d
 
 > LongNavi <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 1, header=TRUE, colClasses=NA)
 > ggboxplot(LongNavi, x = "Source", y = "Longueur")
+![BoxPlot LongNavi](https://zupimages.net/up/21/16/b64d.png)
 > LongNavi <- LongNavi %>%
 > + reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
 > LongNavi %>%
@@ -38,6 +39,7 @@ Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.d
 
 > LargNavi <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 2, header=TRUE, colClasses=NA)
 > ggboxplot(LargNavi, x = "Source", y = "Largeur")
+![BoxPlot LargNavi](https://zupimages.net/up/21/16/806p.png)
 > LargNavi <- LargNavi %>%
 > + reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
 > LargNavi %>%
@@ -70,6 +72,7 @@ Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.d
 
 > ProfNavi <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 3, header=TRUE, colClasses=NA)
 > ggboxplot(ProfNavi, x = "Source", y = "Profondeur")
+![BoxPlot ProfNavi](https://zupimages.net/up/21/16/uq8g.png)
 > ProfNavi <- ProfNavi %>%
 > + reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
 > ProfNavi %>%
@@ -103,6 +106,7 @@ Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.d
 
 > LongCreno <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 4, header=TRUE, colClasses=NA)
 > ggboxplot(LongCreno, x = "Source", y = "Longueur")
+![BoxPlot LongCreno](https://zupimages.net/up/21/16/jcdr.png)
 > LongCreno <- LongCreno %>%
 > + reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
 > LongCreno %>%
@@ -135,6 +139,7 @@ Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.d
 
 > LargCreno <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 5, header=TRUE, colClasses=NA)
 > ggboxplot(LargCreno, x = "Source", y = "Largeur")
+![BoxPlot LargCreno](https://zupimages.net/up/21/16/e275.png)
 > LargCreno <- LargCreno %>%
 > + reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
 > LargCreno %>%
@@ -167,6 +172,7 @@ Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.d
 
 > ProfCreno <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 6, header=TRUE, colClasses=NA)
 > ggboxplot(ProfCreno, x = "Source", y = "Profondeur")
+![BoxPlot ProfCreno](https://zupimages.net/up/21/16/pm7n.png)
 > ProfCreno <- ProfCreno %>%
 > + reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
 > ProfCreno %>%
@@ -186,6 +192,7 @@ Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.d
 
 > LongPlano <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 7, header=TRUE, colClasses=NA)
 > ggboxplot(LongPlano, x = "Source", y = "Longueur")
+![BoxPlot LongPlano](https://zupimages.net/up/21/16/r26r.png)
 > LongPlano <- LongPlano %>%
 > + reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
 > LongPlano %>%
@@ -216,6 +223,7 @@ Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.d
 
 > LargPlano <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 8, header=TRUE, colClasses=NA)
 > ggboxplot(LargPlano, x = "Source", y = "Largeur")
+![BoxPlot LargPlano](https://zupimages.net/up/21/16/hoa4.png)
 > LargPlano <- LargPlano %>%
 > + reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
 > LargPlano %>%
@@ -246,6 +254,7 @@ Utilisation d'un test de Kruskal-Wallis (source code : [Datanovia](https://www.d
 
 > ProfCreno <- read.xlsx('/Users/fredericwolf/Desktop/Stage 2021/Mesures/Campagne mars 2021/stats_biovolumes.xlsx', 6, header=TRUE, colClasses=NA)
 > ggboxplot(ProfCreno, x = "Source", y = "Profondeur")
+![BoxPlot ProfCreno](https://zupimages.net/up/21/16/kf0o.png)
 > ProfCreno <- ProfCreno %>%
 > + reorder_levels(Source, order = c("Ours", "Estreys", "Bard"))
 > ProfCreno %>%
@@ -258,3 +267,89 @@ Résultat : p = 0.231
 ![Resultats Kruskal ProfPlano](https://zupimages.net/up/21/15/qf64.png)
 
 -> Il n'y a pas de différence significative de profondeur des Planothidium entre les sources Salins et Estreys
+
+### Vérification Normalité
+La normalité est vérifiée par un test de Shapiro-Wilk, complété par des représentations graphiques (Diagramme de densité et QQPlot) (source code : [Datanovia](https://www.datanovia.com/en/fr/lessons/test-de-normalite-dans-r/))
+#### Planothidium
+> ggdensity(ProfPlano$Profondeur, fill = "lightgray")
+![Normalite ProfPlano](https://zupimages.net/up/21/16/z9ba.png)
+> ggqqplot(ProfPlano$Profondeur)
+![QQPlot ProfPlano](https://zupimages.net/up/21/16/u9na.png)
+> ProfPlano %>% shapiro_test(Profondeur)
+
+Résultat : p = 1.92e-17
+![Resultats Shapiro ProfPlano](https://zupimages.net/up/21/16/nv48.png)
+
+> ggdensity(LargPlano$Largeur, fill = "lightgray")
+![Normalite LargPlano](https://zupimages.net/up/21/16/u6fs.png)
+> ggqqplot(LargPlano$Largeur)
+![QQPlot LargPlano](https://zupimages.net/up/21/16/8q3l.png)
+> LargPlano %>% shapiro_test(Largeur)
+
+Résultat : p = 1.83e-13
+![Resultats ShapiroLargPlano](https://zupimages.net/up/21/16/7f97.png)
+
+> ggdensity(LongPlano$Longueur, fill = "lightgray")
+![Normalite LongPlano](https://zupimages.net/up/21/16/4ax9.png)
+> ggqqplot(LongPlano$Longueur)
+![QQPlot LongPlano](https://zupimages.net/up/21/16/stc6.png)
+> LongPlano %>% shapiro_test(Longueur)
+
+Résultat : p = 0.00451
+![Resultats ShapiroLongPlano](https://zupimages.net/up/21/16/efnv.png)
+
+### Crenotia
+> ggdensity(ProfCreno$Profondeur, fill = "lightgray")
+![Normalite ProfCreno](https://zupimages.net/up/21/16/91zl.png)
+> ggqqplot(ProfCreno$Profondeur)
+![QQPlot ProfCreno](https://zupimages.net/up/21/16/u6lu.png)
+> ProfCreno %>% shapiro_test(Profondeur)
+
+Résultat : p = 0.00000186
+![Resultats Shapiro ProfCreno](https://zupimages.net/up/21/16/ctu2.png)
+
+> ggdensity(LargCreno$Largeur, fill = "lightgray")
+![Normalite LargCreno](https://zupimages.net/up/21/16/91zl.png)
+> ggqqplot(LargCreno$Largeur)
+![QQPlot LargCreno](https://zupimages.net/up/21/16/u6lu.png)
+> LargCreno %>% shapiro_test(Largeur)
+
+Résultat : p = 1.40e-14
+![Resultats ShapiroLargCreno](https://zupimages.net/up/21/16/nisx.png)
+
+> ggdensity(LongCreno$Longueur, fill = "lightgray")
+![Normalite LongCreno](https://zupimages.net/up/21/16/hgzv.png)
+> ggqqplot(LongCreno$Longueur)
+![QQPlot LongCreno](https://zupimages.net/up/21/16/yndz.png)
+> LongCreno %>% shapiro_test(Longueur)
+
+Résultat : p = 8.32e-11
+![Resultats ShapiroLongCreno](https://zupimages.net/up/21/16/gtgf.png)
+
+### Navicula
+> ggdensity(ProfNavi$Profondeur, fill = "lightgray")
+![Normalite ProfNavi](https://zupimages.net/up/21/16/fx1b.png)
+> ggqqplot(ProfNavi$Profondeur)
+![QQPlot ProfNavi](https://zupimages.net/up/21/16/p260.png)
+> ProfNavi %>% shapiro_test(Profondeur)
+
+Résultat : p = 0.00635
+![Resultats Shapiro ProfNavi](https://zupimages.net/up/21/16/s26o.png)
+
+> ggdensity(LargNavi$Largeur, fill = "lightgray")
+![Normalite LargNavi](https://zupimages.net/up/21/16/26s7.png)
+> ggqqplot(LargNavi$Largeur)
+![QQPlot LargNavi](https://zupimages.net/up/21/16/9io1.png)
+> LargNavi %>% shapiro_test(Largeur)
+
+Résultat : p = 1.41e-15
+![Resultats ShapiroLargNavi](https://zupimages.net/up/21/16/1tni.png)
+
+> ggdensity(LongNavi$Longueur, fill = "lightgray")
+![Normalite LongNavi](https://zupimages.net/up/21/16/pz2a.png)
+> ggqqplot(LongNavi$Longueur)
+![QQPlot LongNavi](https://zupimages.net/up/21/16/01yq.png)
+> LongNavi %>% shapiro_test(Longueur)
+
+Résultat : p = 0.0000707
+![Resultats ShapiroLongNavi](https://zupimages.net/up/21/16/6dr8.png)
